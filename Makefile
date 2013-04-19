@@ -1,0 +1,20 @@
+TEXFILES = $(wildcard *.tex)
+PDFFILES = $(TEXFILES:.tex=.pdf)
+
+all: pdf clean
+
+pdf: $(PDFFILES)
+
+%.pdf: %.tex
+	@rubber --pdf $<
+	@if [ -d publish ];then mv *.pdf publish; else mkdir publish; mv *.pdf publish/;fi
+
+clean:
+	@rubber --clean $(TEXFILES:.tex=)
+
+distclean: clean
+	@rubber --clean --pdf $(TEXFILES:.tex=)
+	@rm -rf publish
+
+x:
+	@evince publish/plain_main.pdf

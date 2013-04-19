@@ -1,0 +1,89 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{listings}
+\frenchspacing
+\linespread{1.2}                                          %espacio entre líneas
+\setlength{\parskip}{1.5ex plus 0.2ex minus 0.2ex}        %espacio entre párrafos
+\setlength{\columnsep}{0.9cm}  							  %espacio entre columnas
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{moreverb}
+
+\geometry{tmargin=4.5cm, lmargin=3.0cm, rmargin=2.5cm, bmargin=2.0cm}
+
+\newcommand\R{R} %Sentencia para crear nuevos comandos.
+\newenvironment{keywords}{\begin{description}\item[Keywords:]}{\end{description}}
+
+\title{
+\center{
+	textbf{Chilean Virtual Observatory Proposal}
+	}
+\author{Universidad Técnica Federico Santa María \\
+	Computer Systems Research Group \\
+	}
+\date{Valparaíso, \today}
+}
+
+\fancyhf{}
+\fancyhead[L]{Chilean Virtual Observatory Proposal}
+\fancyhead[R]{\thepage}
+\fancyfoot[L]{{\small Universidad Técnica Federico Santa María}}
+\fancyfoot[R]{{\small Jonathan Antognini}}
+\pagestyle{fancy}
+
+\begin{document}
+\maketitle
+
+\vspace{0.5cm}
+
+\begin{center}
+	\begin{abstract}
+		\input{include/abstract}
+	\end{abstract}
+\end{center}
+
+\vspace{0.4cm}
+
+\begin{center}
+\begin{keywords}
+Virtual Observatory, ALMA, ChiVO, Open Source.
+\end{keywords}
+\end{center}
+
+\vspace{1cm}
+
+\thispagestyle{empty}
+
+\newpage
+\tableofcontents
+
+\newpage
+\input{include/introduction}
+
+\newpage
+\input{include/community}
+
+\newpage
+\input{include/initial_developments}
+
+\newpage
+\input{include/planning}
+
+\newpage
+
+\thispagestyle{empty}
+
+%\nocite{*}
+%\bibliographystyle{alpha}
+%\bibliography{report}
+
+\end{document}

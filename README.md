@@ -1,4 +1,3 @@
-proposal
-========
-
-Chilean Virtual Observatory Proposal
+To compile its necessary:
+	- rubber
+	- texlivefull
