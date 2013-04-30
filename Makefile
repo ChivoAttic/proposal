@@ -9,6 +9,12 @@ pdf: $(PDFFILES)
 	@rubber --pdf $<
 	@if [ -d publish ];then mv *.pdf publish; else mkdir publish; mv *.pdf publish/;fi
 
+pdflatex: $(TEXFILES)
+	@pdflatex $<
+	@pdflatex $<
+	@bibtex $(TEXFILES:.tex=)
+	@pdflatex $<
+
 clean:
 	@rubber --clean $(TEXFILES:.tex=)
 
