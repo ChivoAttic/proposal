@@ -7,7 +7,6 @@
 %
 %Para tener una idea general de la cantidad de datos que requerirán ser
 %clasificados y procesados, podemos tomar en cuenta el proyecto ALMA,
-%
 %inaugurado hace un par de semanas, el cual cuando se encuentre completamente
 %operativo (con todo su conjunto de antenas), se generarán más de 1 TB de datos
 %por día de observación.
@@ -43,3 +42,44 @@
 %existente y servicios astronómicos, como en el análisis de dicha información. 
 
 \section{Goals}
+
+The large-data scale generated and which will generate by the current and
+future astronomical observatories in Chile, have created new requirements that
+serve as opportunities for development of new tools and data analysis
+techniques.
+
+To have a general idea of the amount of data that will need to be sorted and
+processed, we can consider the ALMA project, opened a couple of weeks ago,
+which wen fully operational (with all its antenna array) will generate over 1TB
+of data per day of observation.
+
+The handling of high volumes of data generate complications in the following
+issues:
+
+\begin{itemize}
+	\item \emhp{\textbf{Storage}}, is necessary to have data processing 
+		center with sufficient storage capacity according to the 
+		conumption needs of the data, without ignoring the physical 
+		space needed by the equipment and the architectura
+		of storage behind itself.
+	\item \emph{\textbf{Access}}, mechanical and regulations must be 
+		established for anyone, whether or not astronomers, which 
+		requires a system that allows access to that system from anywhere. 
+		In this project it has been decided that a web system is an
+		appropriate mechanism to supply this requirement.
+	\item \emph{\textbf{Processing}}, data processing is a particular area
+		of computing, which means understanding the nature and the 
+		structure of the data, as well as the tools and techniques
+		that can be used to carry it out. Having large volumes of data,
+		the processing to accomplish, whether corrections, calibrations,
+		analysis, etc., Requires more time than usual and of course,
+		more computational resources, items that a user does not have.
+		So a computational cluser, can be a useful tool to facilitate
+		this work.
+\end{itemize}
+
+The points detailed above, belongs to the main motivations why Chile currently
+is developing a project to create a platform for processing of large-data
+scale, which promises like one of their deliverables one Virtual Observatroy,
+which is expected to ensure speed an efficiency, both the access existing
+information and services astronomical, as in the analysis of such information.
