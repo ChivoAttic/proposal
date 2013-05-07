@@ -23,4 +23,4 @@ distclean: clean
 	@rm -rf publish
 
 x:
-	@evince publish/plain_main.pdf
+	@evince publish/plain_main.pdf &> /dev/null &
