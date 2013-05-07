@@ -22,5 +22,8 @@ distclean: clean
 	@rubber --clean --pdf $(TEXFILES:.tex=)
 	@rm -rf publish
 
-x:
+x_plain:
 	@evince publish/plain_main.pdf &> /dev/null &
+
+x_paper:
+	@evince publish/paper_main.pdf &> /dev/null &
