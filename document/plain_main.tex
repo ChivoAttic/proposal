@@ -6,9 +6,9 @@
 \usepackage{float}
 \usepackage{listings}
 \frenchspacing
-\linespread{1.2}                                          %espacio entre líneas
-\setlength{\parskip}{1.5ex plus 0.2ex minus 0.2ex}        %espacio entre párrafos
-\setlength{\columnsep}{0.9cm}  							  %espacio entre columnas
+\linespread{1.2}                                          
+\setlength{\parskip}{1.5ex plus 0.2ex minus 0.2ex}        
+\setlength{\columnsep}{0.9cm}  							  
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \usepackage{verbatim}
@@ -18,15 +18,15 @@
 \usepackage{fancyhdr}
 \usepackage{moreverb}
 
-\geometry{tmargin=4.5cm, lmargin=3.0cm, rmargin=2.5cm, bmargin=2.0cm}
+\geometry{tmargin=3.0cm, lmargin=3.0cm, rmargin=2.5cm, bmargin=2.0cm}
 
-\newcommand\R{R} %Sentencia para crear nuevos comandos.
 \newenvironment{keywords}{\begin{description}\item[Keywords:]}{\end{description}}
 
 \title{
 \center{\sc{Chilean Virtual Observatory Proposal}}
-\author{Mauricio Solar, \url{msolar@inf.utfsm.cl}\\
-	Jonathan Antognini, \url{jantogni@csrg.cl}\\
+\author{ Mauricio Solar, Jonathan Antognini, Jorge Ibsen, Paola Arellano, Diego Mardones, \\
+	Eduardo Vera, Marcelo Mendoza, Karim Pichara, Ricardo Contreras, Victor Parada, \\
+	Nelson Padilla, Neil Nagar, Guillermo Cabrera
 	}
 \date{Valparaíso, \today}
 }
@@ -34,30 +34,10 @@
 \fancyhf{}
 \fancyhead[L]{Chilean Virtual Observatory Proposal}
 \fancyhead[R]{\thepage}
-%\fancyfoot[L]{{\small Universidad Técnica Federico Santa María}}
-%\fancyfoot[R]{{\small Jonathan Antognini}}
 \pagestyle{fancy}
 
 \begin{document}
 \maketitle
-
-\vspace{0.5cm}
-
-%\begin{center}
-%	\begin{abstract}
-%		Summary	
-%	\end{abstract}
-%\end{center}
-
-\vspace{0.4cm}
-
-%\begin{center}
-%\begin{keywords}
-%Virtual Observatory, ALMA, ChiVO, Open Source.
-%\end{keywords}
-%\end{center}
-
-\vspace{1cm}
 
 \thispagestyle{empty}
 
@@ -67,10 +47,6 @@
 
 \input{include/community}
 
-\thispagestyle{empty}
-
-%\nocite{*}
-%\bibliographystyle{alpha}
-%\bibliography{report}
+%\thispagestyle{empty}
 
 \end{document}
